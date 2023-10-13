@@ -14,7 +14,7 @@ type Props = {
 const Navbar = ({ selectedPage, setSelectedPage }: Props) => {
   const flexBetween = 'flex items-center justify-between'
   const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false)
-  const isAboveMediumScreens = useMediaQuery('(min-width: 500px')
+  const isAboveMediumScreens = useMediaQuery('(min-width: 1060px')
 
   return (
     <nav>
@@ -29,22 +29,22 @@ const Navbar = ({ selectedPage, setSelectedPage }: Props) => {
               <div className={`${flexBetween} w-full`}>
                 <div className={`${flexBetween} gap-8 text-sm`}>
                   <Link
-                    page="Home"
+                    page="Página Inicial"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
                   />
                   <Link
-                    page="Benefits"
+                    page="Benefícios"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
                   />
                   <Link
-                    page="Our Classes"
+                    page="Nossos Cursos"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
                   />
                   <Link
-                    page="Contact Us"
+                    page="Fale Conosco"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
                   />
