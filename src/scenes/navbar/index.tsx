@@ -1,5 +1,6 @@
 import Logo from '@/assets/Logo.png'
 import useMediaQuery from '@/hooks/useMediaQuery'
+import ActionButton from '@/shared/ActionButton'
 import { SelectedPage } from '@/shared/types'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid'
 import { useEffect, useState } from 'react'
@@ -50,7 +51,9 @@ const Navbar = ({ selectedPage, setSelectedPage }: Props) => {
                 </div>
                 <div className={`${flexBetween} gap-8`}>
                   <p>Sign In</p>
-                  <button>Become a Member</button>
+                  <ActionButton setSelectedPage={setSelectedPage}>
+                    Become a Member
+                  </ActionButton>
                 </div>
               </div>
             ) : (
