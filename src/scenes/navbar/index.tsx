@@ -3,7 +3,7 @@ import useMediaQuery from '@/hooks/useMediaQuery'
 import ActionButton from '@/shared/ActionButton'
 import { SelectedPage } from '@/shared/types'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import Link from './Link'
 
 type Props = {
