@@ -6,7 +6,7 @@ import {
   AcademicCapIcon,
   HomeModernIcon,
   UserGroupIcon,
-} from '@heroicons/react/24/solid'
+} from '@heroicons/react/24/solid/index.js'
 import { motion } from 'framer-motion'
 import Benefit from './Benefit'
 
