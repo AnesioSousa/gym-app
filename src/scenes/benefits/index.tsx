@@ -13,18 +13,21 @@ import Benefit from './Benefit'
 const benefits: Array<BenefitType> = [
   {
     icon: <HomeModernIcon className="h-6 w-6" />,
-    title: 'State of the Art Facilites',
-    description: 'lorem ipsumasdasdsadasdsadsadas',
+    title: 'Instalações de última geração',
+    description:
+      'Com tecnologia de última geração e instalações modernas, estamos comprometidos em oferecer um ambiente que inspire confiança, motivação e progresso aos nossos membros.',
   },
   {
     icon: <UserGroupIcon className="h-6 w-6" />,
-    title: "100's of Diverse Classes",
-    description: 'lorem ipsumasdasdsadasdsadsadas',
+    title: '+100 tipos de cursos',
+    description:
+      'Nossa academia orgulhosamente oferece uma vasta gama de cursos, com mais de 100 opções disponíveis para atender às diversas necessidades e interesses dos nossos membros. ',
   },
   {
     icon: <AcademicCapIcon className="h-6 w-6" />,
-    title: 'Expert and Pro Trainers',
-    description: 'lorem ipsumasdasdsadasdsadsadas',
+    title: 'Personal trainers campeões',
+    description:
+      'Com anos de experiência e expertise comprovada, cada um dos nossos treinadores é dedicado a fornecer orientação personalizada e apoio individualizado.',
   },
 ]
 // Para fazer as animações dos benefícios que a academia provê
@@ -57,11 +60,12 @@ const Benefits = ({ setSelectedPage }: Props) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <HText>MORE THAN JUST A GYM.</HText>
+          <HText>BEM MAIS DO QUE UMA ACADEMIA</HText>
           <p className="my-5 text-sm">
-            We provide world class fitness equipment, trainers and classes to
-            get you to your ultimate fitness goals with ease. We provide true
-            care into each and every member.
+            Aqui você encontra os melhores equipamentos do mercado! Conquiste o
+            corpo dos seus sonhos, aprenda a treinar, a se alimentar melhor e a
+            se organizar para o sucesso. Conecte-se a milhares de pessoas com os
+            mesmos objetivos que você.
           </p>
         </motion.div>
 
