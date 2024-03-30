@@ -18,7 +18,7 @@ const Home = ({ setSelectedPage }: Props) => {
 
   return (
     <section id="home" className="gap-16 bg-gray-20 py-10 md:h-full md:pb-0">
-      {/* IMAGE AND MAIN HEADER */}
+      {/* Nessa div fica o banner e o cabeçalho principal*/}
       <motion.div
         className="mx-auto w-5/6 items-center justify-center md:flex md:h-5/6"
         onViewportEnter={() => setSelectedPage(SelectedPage.Home)}
@@ -26,7 +26,6 @@ const Home = ({ setSelectedPage }: Props) => {
         {/* MAIN HEADER */}
         <div className="z-10 mt-32 md:basis-3/5">
           {/* HEADINGS */}
-          {/* 'hidden' e 'visible' são states! inicial e final respectivamente*/}
           <motion.div
             className="md:-mt-20"
             initial="hidden"
@@ -47,9 +46,9 @@ const Home = ({ setSelectedPage }: Props) => {
             </div>
 
             <p className="mt-8 text-sm">
-              Unrivaled Gym. Unparalleled Training Fitness Classes. World Class
-              Studios to get the Body Shapes That you Dream of.. Get Your Dream
-              Body Now.
+              💪 A maior e mais completa rede de academias do interior da Bahia.
+              <br />
+              Sempre uma perto de você.🏋️
             </p>
           </motion.div>
 
@@ -66,14 +65,14 @@ const Home = ({ setSelectedPage }: Props) => {
             }}
           >
             <ActionButton setSelectedPage={setSelectedPage}>
-              Join Now
+              Matricule-se já!
             </ActionButton>
             <AnchorLink
               className="text-sm font-bold text-primary-500 underline hover:text-secondary-500"
               onClick={() => setSelectedPage(SelectedPage.ContactUs)}
               href={`#${SelectedPage.ContactUs}`}
             >
-              <p>Learn More</p>
+              <p className="text-xs">20% de desconto nos 3 primeiros meses</p>
             </AnchorLink>
           </motion.div>
         </div>
